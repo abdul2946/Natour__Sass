@@ -263,7 +263,14 @@
             </section>
             <!-- Stories Section -->
             <section class="section-stories">
-                <div class="u-center-text u-margin-bottom-big">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="./img/video.mp4" type="video/mp4" />
+                        <source src="./img/video.webm" type="video/webm" />
+                        Your browser is not supporter!
+                    </video>
+                </div>
+                <div class="u-center-text u-margin-bottom-huge">
                     <h2 class="heading-secondery">
                         We make people genuinely happy
                     </h2>
@@ -271,8 +278,14 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="./img/nat-8.jpg" alt="Person on a tour" class="story__image">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
+                            <img
+                                src="./img/nat-8.jpg"
+                                alt="Person on a tour"
+                                class="story__image"
+                            />
+                            <figcaption class="story__caption">
+                                Mary Smith
+                            </figcaption>
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
@@ -284,15 +297,22 @@
                                 praesentium, quisquam nam eveniet quam harum
                                 expedita laboriosam ipsam. Ab a asperiores sequi
                                 nihil, velit maiores quasi vitae. Modi! Lorem
-                                ipsum dolor sit amet consectetur, 
+                                ipsum dolor sit amet consectetur,
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="./img/nat-9.jpg" alt="Person on a tour" class="story__image">
-                            <figcaption class="story__caption">Jack Wilson</figcaption>
+                            <img
+                                src="./img/nat-9.jpg"
+                                alt="Person on a tour"
+                                class="story__image"
+                            />
+                            <figcaption class="story__caption">
+                                Jack Wilson
+                            </figcaption>
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
@@ -304,7 +324,8 @@
                                 praesentium, quisquam nam eveniet quam harum
                                 expedita laboriosam ipsam. Ab a asperiores sequi
                                 nihil, velit maiores quasi vitae. Modi! Lorem
-                                ipsum dolor sit amet consectetur, 
+                                ipsum dolor sit amet consectetur,
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -312,6 +333,88 @@
                     <a href="#" class="btn-text">Read all stories and &rarr;</a>
                 </div>
             </section>
+            <!-- Booking Section -->
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <div class="u-margin-bottom-small">
+                                <h2 class="heading-secondery">
+                                    Start booking now
+                                </h2>
+                            </div>
+                            <form action="" class="form">
+                                <div class="form__group">
+                                    <input
+                                        type="text"
+                                        class="form__input"
+                                        id="name"
+                                        placeholder="Full Name"
+                                        required
+                                    />
+                                    <label for="name" class="form__label"
+                                        >Full Name</label
+                                    >
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        type="email"
+                                        class="form__input"
+                                        id="name"
+                                        placeholder="Email Address"
+                                        required
+                                    />
+                                    <label for="name" class="form__label"
+                                        >Email Address</label
+                                    >
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__radio">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="small"
+                                            name="tour-size"
+                                        />
+                                        <label
+                                            for="small"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Small tour group</label
+                                        >
+                                    </div>
+                                    <div class="form__radio">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="large"
+                                            name="tour-size"
+                                        />
+                                        <label
+                                            for="large"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span
+                                            >Large tour group</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="form__group u-margin-top-medium">
+                                    <button class="btn btn--green">
+                                        Next Step &rarr;
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer Section -->
         </main>
 
         <!-- <section class="grid-test">
