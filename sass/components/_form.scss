@@ -47,7 +47,7 @@
     &__radio {
         width: 49%;
         display: inline-block;
-        &-input{
+        &-input {
             display: none;
         }
         &-label {
@@ -67,8 +67,7 @@
             top: -0.5rem;
 
             &::after {
-                @include centerHorizontialVertical
-                height: 1.3rem;
+                @include absoluteCenter height: 1.3rem;
                 width: 1.3rem;
                 display: block;
                 content: "";
@@ -79,9 +78,7 @@
             }
         }
         &-input:checked ~ &-label &-button::after {
-        opacity: 1;
+            opacity: 1;
+        }
     }
-    }
-
-    
 }

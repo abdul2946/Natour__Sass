@@ -41,7 +41,7 @@
         transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
     &__list {
-        @include centerHorizontialVertical;
+        @include absoluteCenter;
         text-align: center;
         list-style: none;
         width: 100%;
@@ -87,36 +87,39 @@
         opacity: 1;
     }
 
-    &__icon{
+    &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 3.4rem;
         &,
         &::before,
-        &::after{
+        &::after {
             height: 3px;
             width: 3rem;
+            border-radius: 5px;
             background-color: $color-gray-dark-3;
             display: inline-block;
         }
 
         &::after,
-        &::before{
-            content:"";
+        &::before {
+            content: "";
             position: absolute;
             left: 0;
             transition: all 0.2s;
         }
-        &::before{
+        &::before {
             top: -0.8rem;
         }
-        &::after{
+        &::after {
             top: 0.8rem;
         }
     }
-    &__button:hover &__icon::before{
+    &__button:hover &__icon::before {
+        height: 2px;
         top: -1rem;
     }
-    &__button:hover &__icon::after{
+    &__button:hover &__icon::after {
+        height: 2px;
         top: 1rem;
     }
     &__checkbox:checked + &__button &__icon {
