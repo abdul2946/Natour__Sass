@@ -8,6 +8,11 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        width: 100%;
+        transform: skewX(0);
+    }
+
     &__shape {
         height: 15rem;
         width: 15rem;
@@ -18,6 +23,11 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         transform: skewX(12deg) translateX(-3rem);
         position: relative;
+        @include respond(tab-port) {
+            width: 10rem;
+            height: 10rem;
+            transform: skewX(0) translateX(-3rem);
+        }
     }
     &__image {
         height: 100%;
@@ -27,9 +37,13 @@
     }
     &__text {
         transform: skewX(12deg);
+        @include respond(tab-port) {
+            transform: skewX(0);
+        }
     }
     &__caption {
-        @include absoluteCenter color: $color-white;
+        @include absoluteCenter;
+        color: $color-white;
         font-size: 1.7rem;
         text-align: center;
         opacity: 0;

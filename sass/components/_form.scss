@@ -47,6 +47,11 @@
     &__radio {
         width: 49%;
         display: inline-block;
+
+        @include respond(tab-port){
+            width: 100%;
+            margin-bottom: 1rem;
+        }
         &-input {
             display: none;
         }
@@ -67,7 +72,8 @@
             top: -0.5rem;
 
             &::after {
-                @include absoluteCenter height: 1.3rem;
+                @include absoluteCenter;
+                height: 1.3rem;
                 width: 1.3rem;
                 display: block;
                 content: "";

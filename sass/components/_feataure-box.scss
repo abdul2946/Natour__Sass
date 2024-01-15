@@ -7,6 +7,10 @@
     box-shadow: $shadow-small-light;
     transition: all 0.3s;
 
+    @include respond(tab-port){
+        padding: 2rem;
+    }
+
     &:hover{
         transform: translateY(-1.5rem) scale(1.03)
     }
@@ -22,6 +26,9 @@
         );
         -webkit-background-clip: text;
         color: transparent;
+        @include respond(tab-port){
+            margin: 0;
+        }
     }
     
     &__text {

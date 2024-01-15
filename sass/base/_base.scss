@@ -9,9 +9,25 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    @include respond(big-desk) {
+        font-size: 75%;
+    }
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(phone) {
+        font-size: 37.5%;
+    }
 }
 
 body {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    padding: 3rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
