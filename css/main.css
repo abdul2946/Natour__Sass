@@ -168,8 +168,7 @@ body {
   .bg-video__content {
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    object-fit: cover; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -456,11 +455,6 @@ body {
   margin-left: 2rem;
   transition: all 0.3s; }
 
-.form__input:-moz-placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
@@ -559,13 +553,13 @@ body {
     font-size: 1.4rem;
     margin-bottom: 4rem;
     -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
     -moz-column-gap: 4rem;
-         column-gap: 4rem;
+    column-gap: 4rem;
     -moz-column-rule: 1px solid #f7f7f7;
-         column-rule: 1px solid #f7f7f7;
+    column-rule: 1px solid #f7f7f7;
     -webkit-hyphens: auto;
-            hyphens: auto; }
+    hyphens: auto; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
