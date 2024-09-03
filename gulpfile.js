@@ -1,26 +1,12 @@
 import gulp from "gulp";
 import autoPrefixer from "gulp-autoprefixer";
-import * as sass from "sass";
 import gulpSass from "gulp-sass";
+import minify from "gulp-clean-css"
+import sass from "node-sass"
 
-const scss = gulpSass(sass);
+const scss = gulpSass(sass)
 
-export const build = async () => {
-	gulp
-		.src("./sass/*.scss")
-		.pipe(await scss().on("error", scss.logError))
-		.pipe(
-			await autoPrefixer({
-				browsers: ["last 99 versions"],
-				cascade: false,
-			})
-		)
-		.pipe(gulp.dest("./css"));
-};
-export const watchCss = () => {
-	gulp.watch("./sass/*.scss",build)
-}
+gulp.task("compilescss", async function () {
+	gulp.src("./sass/**/*.scss").pipe(await scss()).pipe(await autoPrefixer()).pipe(await gulp.dest("./css"))
+});
 
-const series = gulp.series(build, watchCss);
-
-export default series;
